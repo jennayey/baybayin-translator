@@ -75,6 +75,7 @@ textarea {
   line-height: 1em;
   outline: none;
   color: var(--text-color);
+  background-color: white;
 }
 #buttons {
   padding: 0px 30px;
