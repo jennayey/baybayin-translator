@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+
+    <title></title>
+  </head>
+
+  <body>
+<div id="translatorDiv">
+  <div id="inputText">
+    <textarea
+      id="rawText"
+      rows="3"
+      placeholder="Text here"
+      oninput="translator()"  
+    ></textarea>
+  </div>
+  <div >
+    <textarea
+    id="outputText"
+    rows="3"
+    placeholder="Translations go here"
+    readonly
+  ></textarea>
+  </div>
+</div>
+  </body>
+</html>
