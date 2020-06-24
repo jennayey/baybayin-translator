@@ -13,22 +13,36 @@
   </head>
 
   <body>
-<div id="translatorDiv">
-  <div id="inputText">
-    <textarea
-      id="rawText"
-      rows="3"
-      placeholder="Text here"
-      oninput="translator()"  
-    ></textarea>
-  </div>
-  <div >
-    <textarea
-    id="outputText"
-    rows="3"
-    placeholder="Translations go here"
-    readonly
-  ></textarea>
+<div id="mainDiv">
+  
+  <div>
+    <h1>Magsalin</h1>
+    <div id="translatorDiv">
+      <div id="inputText">
+        <textarea
+          id="rawText"
+          rows="2"
+          placeholder="Text here"
+          oninput="translator()"  
+          
+        ></textarea>
+      </div>
+      <hr>
+      <div  id="outputText" >
+        <textarea
+        id="translatedText"
+        rows="2"
+        placeholder="Translations go here"
+        disabled
+      ></textarea>
+      </div>
+      <hr>
+<div id="buttons">
+  <button onclick="clearText()"><h1>Clear</h1></button>
+  <button onclick=""><h1>Share</h1></button>
+
+</div>
+    </div>
   </div>
 </div>
   </body>

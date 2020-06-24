@@ -1,38 +1,90 @@
 @font-face {
-    font-family: Baybayin;
-    src: url(fonts/BaybayinNamin2020-4.otf);
-  }
+  font-family: Baybayin;
+  src: url(fonts/BaybayinNamin2020-4.otf);
+}
+
+@font-face {
+  font-family: NunitoBold;
+  src: url(fonts/Nunito-Bold.ttf);
+}
+
+@font-face {
+  font-family: NunitoRegular;
+  src: url(fonts/Nunito-Regular.ttf);
+}
 
 /* @font-face {
     font-family: BaybayinRegular;
     src: url("https://jennayey.com/BaybayinNamin2020.ttf");
   } */
+:root {
+  --border-radius: 10px;
+  --bg-color: #f3f6ff;
+  --headings-color: #00109b;
+  --text-color: #110063;
+  --accent-color: #6070ff;
+}
+#translatedText::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-family: NunitoBold;
+  opacity: 1; /* Firefox */
+}
 
-  #outputText::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    font-family: 'myFont', Arial, Helvetica, sans-serif;
-    opacity: 1; /* Firefox */
-  }
-
+textarea::placeholder {
+  color: #bbbbbb;
+}
 body {
-  background-color: F3F6FF;
+  background-color: var(--bg-color);
   padding-top: 30px;
 }
-button {
- margin-top: 20px;
+
+h1,
+h2 {
+  font-family: NunitoBold;
+  color: var(--headings-color);
 }
-#outputText {
-  padding-top: 30px;
-      font-family: Baybayin;
-      font-size:30px;
-     width: 100%;
-      overflow: wrap;
-  }
+#mainDiv {
+  display: flex;
+  justify-content: center;
+}
+#translatorDiv {
+  width: 80vw;
+  border-style: solid;
+  border-color: var(--accent-color);
+  border-radius: var(--border-radius);
+  background-color: white;
+}
+#translatedText {
+  font-family: Baybayin;
+}
 
 #rawText {
-  resize:none;
+  font-family: NunitoBold;
+}
+hr {
+  border-top: 2px solid var(--accent-color);
+}
+textarea {
+  border-radius: var(--border-radius);
+  resize: none;
+  border: none;
+  padding: 30px;
+  font-size: 30px;
   width: 100%;
-  font-size:30px;
-
-  border-color: #C0C6FF;
+  box-sizing: border-box;
+  line-height: 1em;
+  outline: none;
+  color: var(--text-color);
+}
+#buttons {
+  padding: 0px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
+button {
+  border: none;
+  background: none;
+  outline:none;
+}
