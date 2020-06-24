@@ -23,7 +23,9 @@
   --headings-color: #00109b;
   --text-color: #110063;
   --accent-color: #6070ff;
+  --padding: 1em;
 }
+
 #translatedText::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   font-family: NunitoBold;
@@ -48,7 +50,7 @@ h2 {
   justify-content: center;
 }
 #translatorDiv {
-  width: 80vw;
+  width: 65vw;
   border-style: solid;
   border-color: var(--accent-color);
   border-radius: var(--border-radius);
@@ -69,7 +71,7 @@ textarea {
   resize: none;
   border: none;
   padding: 30px;
-  font-size: 30px;
+  font-size: 1.4em;
   width: 100%;
   box-sizing: border-box;
   line-height: 1em;
@@ -78,7 +80,7 @@ textarea {
   background-color: white;
 }
 #buttons {
-  padding: 0px 30px;
+  padding: 0px 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -88,4 +90,20 @@ button {
   border: none;
   background: none;
   outline:none;
+}
+
+button h2 {
+  margin: 10px 0px;
+}
+
+
+
+@media screen and (max-width: 728px){ 
+  #translatorDiv {
+    width: 85vw;
+  }
+  textarea {
+    padding: var(--padding);
+    font-size: 1.2em;
+  }
 }
