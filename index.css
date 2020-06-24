@@ -96,7 +96,9 @@ button h2 {
   margin: 10px 0px;
 }
 
-
+.disabled h2{
+  color:gray;
+}
 
 @media screen and (max-width: 728px){ 
   #translatorDiv {
