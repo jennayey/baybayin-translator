@@ -2,6 +2,14 @@
   font-family: Baybayin;
   src: url(fonts/BaybayinNamin2020-4.otf);
 }
+@font-face {
+  font-family: BaybayinSymbol;
+  src: url(fonts/BaybayinNamin2020-symbol.ttf);
+}
+@font-face {
+  font-family: BaybayinTrueType;
+  src: url(fonts/BaybayinNamin2020-truetype.ttf);
+}
 
 @font-face {
   font-family: NunitoBold;
@@ -13,10 +21,10 @@
   src: url(fonts/Nunito-Regular.ttf);
 }
 
-/* @font-face {
+@font-face {
     font-family: BaybayinRegular;
     src: url("https://jennayey.com/BaybayinNamin2020.ttf");
-  } */
+  }
 :root {
   --border-radius: 10px;
   --bg-color: #f3f6ff;
@@ -98,6 +106,10 @@ button h2 {
 
 .disabled h2{
   color:gray;
+}
+
+.baybayin {
+  font-family: BaybayinSymbol;
 }
 
 @media screen and (max-width: 728px){ 
