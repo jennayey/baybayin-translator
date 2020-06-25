@@ -66,10 +66,12 @@ h2 {
 }
 #translatedText {
   font-family: Baybayin;
+  line-height: 1.75em;
 }
 
 #rawText {
   font-family: NunitoBold;
+  line-height: 1.75em;
 }
 hr {
   border-top: 2px solid var(--accent-color);
