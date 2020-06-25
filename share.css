@@ -1,0 +1,14 @@
+#mainDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+  }
+  
+  .contentCenter {
+  height:100px;
+  width: 100px;
+  border: solid;
+  border-color: black;
+  
+  }

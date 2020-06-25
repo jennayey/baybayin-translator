@@ -32,6 +32,7 @@
   --text-color: #110063;
   --accent-color: #6070ff;
   --padding: 1em;
+  --font-size: 1.4em;
 }
 
 #translatedText::placeholder {
@@ -49,30 +50,64 @@ body {
 }
 
 h1,
-h2 {
+h2,h3 {
   font-family: NunitoBold;
+  
   color: var(--headings-color);
 }
 #mainDiv {
   display: flex;
+  align-items: center;
   justify-content: center;
+  height: 90vh;
 }
-#translatorDiv {
+
+
+.contentCenter {
+/* align-content: center */
+border: solid;
+;}
+
+.contentCenter h1,h3 {
+  margin: 0px;  }
+
+
+#translatorDiv, #shareContainer {
   width: 65vw;
   border-style: solid;
   border-color: var(--accent-color);
   border-radius: var(--border-radius);
   background-color: white;
 }
-#translatedText {
+
+#shareContainer {
+  padding: 10vh 1vh;
+}
+.translatedText {
   font-family: Baybayin;
-  line-height: 1.75em;
+}
+.rawText {
+  font-family: NunitoBold;
 }
 
-#rawText {
-  font-family: NunitoBold;
+.rawText, .translatedText {
   line-height: 1.75em;
+
 }
+.textCenter {
+  text-align: center;
+}
+
+.lgText {
+font-size: 3.5em;
+overflow-wrap: break-word;
+
+}
+
+.smText {
+font-size: 2em;
+}
+
 hr {
   border-top: 2px solid var(--accent-color);
 }
@@ -81,8 +116,8 @@ textarea {
   resize: none;
   border: none;
   padding: 30px;
-  font-size: 1.4em;
   width: 100%;
+  font-size: var(--font-size);
   box-sizing: border-box;
   line-height: 1em;
   outline: none;
@@ -115,12 +150,24 @@ button h2 {
 }
 
 @media screen and (max-width: 728px){ 
-  #translatorDiv {
+  #translatorDiv, #shareContainer {
     width: 85vw;
   }
+
+  
+
   textarea {
     padding: var(--padding);
     font-size: 1.3em;
     height: 20vh;
   }
+
+  .lgText {
+    font-size: 2em;
+    overflow-wrap: break-word;
+    }
+    
+    .smText {
+    font-size: 1.5em;
+    }
 }

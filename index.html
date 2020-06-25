@@ -21,7 +21,7 @@
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
-  <body>
+  <body onload="clearText()">
 <div id="mainDiv">
   
   <div>
@@ -30,6 +30,7 @@
     <div id="translatorDiv">
       <div id="inputText">
         <textarea
+        class="rawText"
           id="rawText"
           rows="2"
           placeholder="Text here"
@@ -41,6 +42,7 @@
       <hr>
       <div  id="outputText" >
         <textarea
+        class="translatedText"
         id="translatedText"
         rows="2"
         placeholder="Translations go here"
@@ -49,8 +51,8 @@
       </div>
       <hr>
 <div id="buttons">
-  <button onclick="clearText()" onmouseover="" style="cursor: pointer;"><h2>Clear</h2></button>
-  <button onclick="" class="disabled" disabled><h2>Share</h2></button>
+  <button id="clearButton" onclick="clearText()" onmouseover="" style="cursor: pointer;"><h2>Clear</h2></button>
+  <a href="share.html"><h2>Share</h2></a>
 
 </div>
     </div>
