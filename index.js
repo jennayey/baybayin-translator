@@ -20,6 +20,14 @@ function shareText() {
   
 }
 
+function hideButtons () {
+  let buttons = document.getElementById('buttons')
+  let hrDivider = document.getElementById('hrDivider')
+
+  buttons.style.display='none'
+hrDivider.style.display ='none'
+}
+
 function letter() {
   let rawText = document.getElementById("rawText").value.toLowerCase() 
   let translatedText = document.getElementById("translatedText") 
