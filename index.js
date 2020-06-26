@@ -1,13 +1,3 @@
-function clearText() {
-  let rawText = document.getElementById("rawText");
-  let translatedText = document.getElementById("translatedText");
-  
-
-  rawText.value = "";
-  translatedText.value = "";
-
- 
-}
 
 function goBack() {
   let shareDiv = document.getElementById("shareDiv");
@@ -18,6 +8,18 @@ function goBack() {
   shareDiv.classList.remove("showDiv");
   mainDiv.classList.remove("hideDiv");
 }
+
+function clearText() {
+  let rawText = document.getElementById("rawText");
+  let translatedText = document.getElementById("translatedText");
+  
+
+  rawText.value = "";
+  translatedText.value = "";
+goBack();
+ 
+}
+
 
 function shareText() {
   document.getElementById("shareTText").innerText = sessionStorage.getItem(
