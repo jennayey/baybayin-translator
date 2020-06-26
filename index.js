@@ -1,12 +1,17 @@
 function clearText() {
   let rawText = document.getElementById("rawText");
   let translatedText = document.getElementById("translatedText");
-  let shareDiv = document.getElementById("shareDiv");
-  let mainDiv = document.getElementById("mainDiv");
+  
 
   rawText.value = "";
   translatedText.value = "";
 
+ 
+}
+
+function goBack() {
+  let shareDiv = document.getElementById("shareDiv");
+  let mainDiv = document.getElementById("mainDiv");
   mainDiv.classList.add("showDiv");
   shareDiv.classList.add("hideDiv");
 
