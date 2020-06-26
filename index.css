@@ -55,11 +55,15 @@ h2,h3 {
   
   color: var(--headings-color);
 }
-#mainDiv {
+.mainContainer{
   display: flex;
   align-items: center;
   justify-content: center;
   height: 90vh;
+}
+
+.showDiv {
+  display: inline-block;
 }
 
 

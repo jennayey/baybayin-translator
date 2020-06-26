@@ -1,20 +1,23 @@
 
-function shareText() {
-    document.getElementById('shareTText').innerText = sessionStorage.getItem('tText')
-    document.getElementById('shareRText').innerText = sessionStorage.getItem('rText')
-}
 
-function translator() {
-  let rawText = document.getElementById("rawText").value.toLowerCase() 
-  let translatedText = document.getElementById("translatedText") 
-  translatedText.value = rawText 
-}
 
 function clearText() {
   let rawText = document.getElementById("rawText") 
   let translatedText = document.getElementById("translatedText") 
   rawText.value = "" 
   translatedText.value = "" 
+}
+
+function shareText() {
+  document.getElementById('shareTText').innerText = sessionStorage.getItem('tText')
+  document.getElementById('shareRText').innerText = sessionStorage.getItem('rText')
+
+  let mainDiv = document.getElementById('mainDiv')
+  let shareDiv = document.getElementById('shareDiv')
+
+  mainDiv.style.display ='none'
+  shareDiv.style.display = 'inline-flexbox'
+  
 }
 
 function letter() {

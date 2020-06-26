@@ -22,7 +22,7 @@
 </head>
 
   <body onload="clearText()">
-<div id="mainDiv">
+<div id="mainDiv" class="mainContainer">
   
   <div>
     <h1>Magsalin</h1>
@@ -52,10 +52,19 @@
       <hr>
 <div id="buttons">
   <button id="clearButton" onclick="clearText()" onmouseover="" style="cursor: pointer;"><h2>Clear</h2></button>
-  <a href="share.html"><h2>Share</h2></a>
+  <button id="clearButton" onclick="shareText()" onmouseover="" style="cursor: pointer;"><h2>Share</h2></button>
 
 </div>
     </div>
+  </div>
+</div>
+
+<div id="shareDiv" class="mainContainer">
+  <div id="shareContainer" class="contentCenter" >
+    
+      <h1 class="translatedText textCenter lgText" id="shareTText" ></h1>
+      <h3 class="rawText textCenter smText" id="shareRText"></h3>
+   
   </div>
 </div>
 
