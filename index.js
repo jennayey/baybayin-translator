@@ -40,8 +40,11 @@ function shareText() {
 
 function hideButtons() {
   let buttons = document.getElementById("buttons");
+  let backButton = document.getElementById("backButton");
+
   let hrDivider = document.getElementById("hrDivider");
 
+  backButton.style.display = "none"
   buttons.style.display = "none";
   hrDivider.style.display = "none";
 }
