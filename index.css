@@ -63,14 +63,18 @@ h2,h3 {
 }
 
 .showDiv {
-  display: inline-block;
+  display: inline-flexbox;
 }
 
-
+.hideDiv {
+  display: none;
+}
 .contentCenter {
 /* align-content: center */
 border: solid;
 ;}
+
+#backButton {display:block}
 
 .contentCenter h1,h3 {
   margin: 0px;  }
@@ -107,6 +111,8 @@ font-size: 3.5em;
 overflow-wrap: break-word;
 
 }
+
+
 
 .smText {
 font-size: 2em;
