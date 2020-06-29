@@ -1,17 +1,19 @@
 let focusTextarea
 
+
+function returnFocusValue () {
+return focusTextarea
+}
+
 function focusedTextArea () {
-  // console.log ('focused here!')
 focusTextarea = true
-console.log (focusTextarea)
 }
 
 function unfocusedTextArea() {
   focusTextarea = false
-console.log (focusTextarea)
-  // console.log ('not focused here!')
-
 }
+
+
 function goBack() {
   let shareDiv = document.getElementById("shareDiv")
   let mainDiv = document.getElementById("mainDiv")
