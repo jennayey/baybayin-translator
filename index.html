@@ -33,8 +33,12 @@
         class="rawText"
           id="rawText"
           rows="2"
+
           placeholder="Text here"
-          onkeyup="letter()"
+          onfocus="focusedTextArea()"
+          onfocusout="unfocusedTextArea()"
+
+            onkeyup="letter()"
         ></textarea>
         <!-- oninput="translator()"   -->
 
@@ -46,7 +50,7 @@
         id="translatedText"
         rows="2"
         placeholder="Translations go here"
-        readonly
+            readonly
       ></textarea>
       </div>
       <hr id="hrDivider">
