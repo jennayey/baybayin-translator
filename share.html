@@ -34,9 +34,77 @@
       content="https://jennayey.com/baybayin-translator/baybayin-translator-share-card.jpg"
     />
     <meta name="twitter:card" content="summary_large_image" />
+
+    <style>
+     .svg1 svg {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+      }
+
+      .svg2 svg {
+        display: block;
+        position: fixed;
+      bottom: 0;
+        left: 0;
+      }
+
+
+    
+    </style>
   </head>
 
-  <body onload="shareText()" >
-    
+  <body>
+
+
+   <div id="shareDiv">
+    <div class="test1">
+      <div class="svg1">
+       <svg
+       viewBox="0 0 1440 228"
+       fill="none"
+       xmlns="http://www.w3.org/2000/svg"
+     >
+       <path
+         d="M-2.05234e-05 -0.499939C-1.50803e-05 60.102 75.8569 118.222 210.883 161.074C345.909 203.926 529.044 228 720 228C910.956 228 1094.09 203.926 1229.12 161.074C1364.14 118.222 1440 60.102 1440 -0.500027L720 -0.5L-2.05234e-05 -0.499939Z"
+         fill="#FFB248"
+       />
+     </svg>
+      </div>
+     
+           <div style="display: flex; align-items: center; justify-content:center; height: 90vh;">
+             <div
+               style="
+                 border: solid;
+                 border-color: orange;
+                 margin: 0 20px;
+                 padding: 10px;
+                 width: 90vw;
+                 border-radius: 20px;
+               "
+             >
+             <h1 class="translatedText textCenter lgText" id="shareTText" > tangina</h1>
+             <h3 class="rawText textCenter smText" id="shareRText"></h3>
+             </div>
+           </div>
+           <div class="svg2">
+             <svg viewBox="0 0 1440 229" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M1440 228.5C1440 167.898 1364.14 109.778 1229.12 66.9263C1094.09 24.0742 910.956 0.000163852 720 0.000125889C529.044 8.79257e-05 345.909 24.0741 210.883 66.9261C75.857 109.778 2.70871e-07 167.898 -3.88722e-05 228.5L720 228.5L1440 228.5Z" fill="#FFB248"/>
+               </svg>
+               
+            </div>
+         </div>
+    <!--  -->
+  <!-- <div>
+    <button id="backButton" onclick="goBack()" onmouseover="" style="cursor: pointer;"><h2>Go Back</h2></button>
+    <div id="shareContainer" class="contentCenter" >
+      
+        
+     
+    </div>
+  </div> -->
+  <!--  -->
+  </div>
   </body>
 </html>
