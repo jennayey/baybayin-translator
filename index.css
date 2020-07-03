@@ -89,6 +89,12 @@ border: solid;
   background-color: white;
 }
 
+#shareDiv{
+  background-image: url("./assets/baybayin-bg-02-02.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 #shareContainer {
   padding: 10vh 1vh;
 }
