@@ -166,12 +166,19 @@ button h2 {
   font-family: Baybayin;
 }
 
+
+#shareButton {
+  display: none;
+}
+
 @media screen and (max-width: 728px){ 
   #translatorDiv, #shareContainer {
     width: 85vw;
   }
 
-  
+  #shareButton {
+    display: block;
+  }
 
   textarea {
     padding: var(--padding);
@@ -202,3 +209,5 @@ button h2 {
 bottom: 0;
   left: 0;
 }
+
+
